@@ -1,0 +1,40 @@
+1. What types of traffic (HTTP, DNS, FTP, etc.)  are present?
+
+- HTTP
+- DNS
+- MDNS
+- UDP
+- TCP
+- IPv4 and IPv6
+
+  2. How many DNS queries were made in total?
+      358
+
+  3. What types of DNS queries were made?
+
+- Type 1: A (IPv4)
+- Type 28: AAAA (IPv6 )
+
+4. What is a Loopback Interface?
+   A Loopback Interface is a virtual network interface that refers to the local computer . 
+
+  5. How many .txt files were requested? List their names.
+    3 .txt files were requested 
+- decoy1.txt
+- decoy2.txt
+- encoded.txt
+
+  6. One .txt file contains base64-encoded content. Identify and decode it. What does it contain?
+FLAG{spid3r_network_master}
+
+7. Was any attempt made to distract the analyst using decoy files? Explain.
+Yes. Files decoy1.txt and decoy2.txt appear intended as distraction or filler files. Their naming and grouping with encoded.txt suggest they may not contain useful data.
+
+  8. Are there any known ports being used for uncommon services?
+ Yes. The HTTP requests are made to localhost on port 8000, which is not a default HTTP port (80 or 443).
+
+  9. How many HTTP GET requests are visible in the capture?
+\     3 HTTP GET request
+
+  10. What User-Agent was used to make the HTTP requests?
+        curl/8.5.0
